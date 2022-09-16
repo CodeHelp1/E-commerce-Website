@@ -113,8 +113,8 @@
  #navbar li a.active::after, 
  #navbar li a:hover::after {
     content: "";
-    width: 30px;
-    height: 3px;
+    width: 17px;
+    height: 2px;
     background: #088178;
     position: absolute;
     bottom: -4px;
@@ -862,6 +862,127 @@
   color: black;
 }
 
+/* .......................Cart page.........................*/
+
+#cart {
+  overflow-x: auto;
+  }
+
+
+#cart table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+}
+
+#cart table img {
+  width: 70px;
+}
+
+#cart table td:nth-child(1) {
+  width: 100px;
+  text-align: center;
+}
+
+#cart table td:nth-child(2) {
+  width: 150px;
+  text-align: center;
+}
+
+#cart table td:nth-child(3) {
+  width: 250px;
+  text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+  width: 150px;
+  text-align: center;
+}
+
+#cart table td:nth-child(5) input {
+  width: 70px;
+  padding: 10px 5px 10px 15px;
+}
+
+#cart table thead {
+  border: 1px solid #e2e9e1;
+  border-left: none;
+  border-right: none;
+}
+
+#cart table thead td {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 18px 0;
+}
+
+#cart table tbody tr td {
+  padding-top: 15px;
+}
+
+#cart table thead td {
+  font-size: 13px;
+}
+
+#cart-add {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#coupon {
+  width: 50%;
+  margin-bottom: 15px;
+}
+
+#coupon h3,
+#subtotal h3 {
+  padding-bottom: 15px;
+}
+
+#coupon input {
+  padding: 10px 20px;
+  outline: none;
+  width: 60%;
+  margin-right: 10px;
+  border: 1px solid #e2e9e1;
+}
+
+#coupon button {
+  background-color: #088178;
+  color: #fff;
+  padding: 12px 20px;
+}
+
+#subtotal {
+  width: 50%;
+  margin-bottom: 30px;
+  border: 1px solid #e2e9e1;
+  padding: 30px;
+}
+
+
+#subtotal table td{
+  width: 50%;
+  border: 1px solid #e2e9e1;
+  padding: 10px;
+  font-size: 13px;
+}
+
+#subtotal button {
+  background-color: #088178;
+  color: #fff;
+  padding: 12px 20px;
+  margin-top: 15px;
+}
+
+
+
+
 
 
 
@@ -891,16 +1012,6 @@
     .section-p1 {
       padding: 40px 40px;
     }
-
-    /* contact page */
-    #font-details {
-      padding: 40px;
-    }
-    #form-details form {
-     width: 50%;
-    }
-
-
 
     #navbar{
       display: flex;
@@ -995,6 +1106,18 @@
       height: auto;
       margin-top: 40px;
     }
+
+    #font-details {
+      padding: 40px;
+    }
+    #form-details form {
+     width: 50%;
+    }
+
+
+
+
+/* .................Mobile Device................................. */
 
     @media (max-width: 477px) {
       .section-p1 {
@@ -1124,6 +1247,21 @@
   #form-details form {
     width: 100%;
     margin-bottom: 30px;
+  }
+
+  /* ..........cart page........ */
+
+  #cart-add {
+    flex-direction: column;
+  }
+
+  #coupon {
+    width: 100%;
+  } 
+
+  #subtotal {
+    width: 100%;
+    padding: 20px;
   }
 
 

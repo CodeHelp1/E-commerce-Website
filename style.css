@@ -754,6 +754,10 @@
   }
 
 /* ...................... contact details...............   */
+#contact-details {
+  overflow-x: auto;
+}
+
 
 #contact-details {
   display: flex;
@@ -979,6 +983,8 @@
   padding: 12px 20px;
   margin-top: 15px;
 }
+
+
 
 
 
@@ -1263,6 +1269,7 @@
     width: 100%;
     padding: 20px;
   }
+
 
 
 
